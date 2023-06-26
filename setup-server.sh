@@ -10,7 +10,7 @@ wget --no-verbose https://github.com/radiocab/setup-server/raw/main/$zipname.zip
  
 sudo apt-get -qq install zip -y
 
-#echo 'test1test'> pass
-unzip  -P test1test -d $HOME/test/ -x "setup-server.sh" $zipname.zip; cp -r --update $HOME/test/$zipname/* $HOME/test/ ; rm -rf $HOME/test/zipname/
+echo $0
+unzip  -P $1 -d $HOME/test/ -x "setup-server.sh" $zipname.zip; cp -r --update $HOME/test/$zipname/* $HOME/test/ ; rm -rf $HOME/test/zipname/
 
 exit 0
